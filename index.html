@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" /> <!-- Define el conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Configura la ventana gráfica para que la página se vea bien en todos los dispositivos -->
+    <title>Calculadora de Proteínas</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="style.css" /> <!-- Enlace al archivo CSS para estilos -->
+  </head>
+  <body>
+    <div class="container"> <!-- Contenedor principal -->
+      <h1>Calculadora de Proteínas</h1> <!-- Título principal de la página -->
+      <div class="input-container"> <!-- Contenedor para la entrada de peso y botón -->
+        <label for="peso" class="hidden-label">Ingresa tu peso (kg)</label> <!-- Etiqueta para el campo de entrada, oculta por CSS -->
+        <input
+          type="number"
+          id="peso"
+          placeholder="Ingresa tu peso (kg)"
+          required
+        /> <!-- Campo de entrada para el peso en kg -->
+         <button class="boton-general">Calcular</button> <!-- Botón para iniciar el cálculo -->
+      </div>
+
+      <h2>Resultados gramos por día:</h2> <!-- Subtítulo para la sección de resultados -->
+      <div class="resultados"> <!-- Contenedor para los resultados -->
+        <div class="resultado" id="resultado-sedentario"> <!-- Resultado para el nivel sedentario -->
+          <img src="icons/Group 2.png" alt="Sedentario" /> <!-- Icono representando el nivel sedentario -->
+          <span id="sedentario"></span> <!-- Span donde se mostrará el resultado para sedentario -->
+          <p>Sedentario</p> <!-- Descripción del nivel -->
+        </div>
+        <div class="resultado" id="resultado-pocoActivo"> <!-- Resultado para el nivel poco activo -->
+          <img src="icons/Group 3.png" alt="Poco Activo" /> <!-- Icono representando el nivel poco activo -->
+          <span id="pocoActivo"></span> <!-- Span donde se mostrará el resultado para poco activo -->
+          <p>Poco Activo</p> <!-- Descripción del nivel -->
+        </div>
+        <div class="resultado" id="resultado-activo"> <!-- Resultado para el nivel activo -->
+          <img src="icons/Group 4.png" alt="Activo" /> <!-- Icono representando el nivel activo -->
+          <span id="activo"></span> <!-- Span donde se mostrará el resultado para activo -->
+          <p>Activo</p> <!-- Descripción del nivel -->
+        </div>
+        <div class="resultado" id="resultado-muyActivo"> <!-- Resultado para el nivel muy activo -->
+          <img src="icons/Group 5.png" alt="Muy Activo" /> <!-- Icono representando el nivel muy activo -->
+          <span id="muyActivo"></span> <!-- Span donde se mostrará el resultado para muy activo -->
+          <p>Muy Activo</p> <!-- Descripción del nivel -->
+        </div>
+      </div>
+    </div>
+
+    <div class="info"> <!-- Sección adicional con información -->
+      <h1>¿Cómo identificar tu nivel de actividad?</h1> <!-- Título de la sección -->
+      <ul>
+        <li>
+          <h2>Sedentario</h2>
+          <p>Pasar el día sentado mayormente (trabajo de escritorio) haciendo actividades diarias (por ejemplo, tareas domésticas)</p>
+        </li>
+        <li>
+          <h2>Poca actividad</h2>
+          <p>Pasar el día sentado mayormente (trabajo de escritorio) haciendo actividades diarias (por ejemplo, tareas domésticas)</p>
+        </li>
+        <li>
+          <h2>Activo</h2>
+          <p>Un trabajo físicamente exigente (por ejemplo, trabajo de construcción)</p>
+        </li>
+        <li>
+          <h2>Muy activo</h2>
+          <p>Un trabajo físicamente exigente</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="news-container">
+      <h2>Suscribíte y enterate primero que nadie de ofertas especiales, novedades, eventos y más.</h2>
+      <label for="email" class="news">Ingresa tu email</label> <!-- Etiqueta para el campo de entrada, oculta por CSS -->
+      <input
+        type="email"
+        id="email"
+        placeholder= "Ingresa tu email"
+        required
+      /> 
+      <button id="boton-news">Suscribirse</button> <!-- Botón para iniciar el cálculo -->
+      <p id="privacy-policy">Al registrar y confirmar sus datos, acepta nuestra política de privacidad</p>
+      <p id="success-message" style="display: none;">Listo! Ya te suscribiste con éxito al Newsletter</p>
+    </div>
+
+
+
+  
+    <script src="CalculadoraProteina.js"></script> <!-- Enlace al archivo de JavaScript para los cálculos -->
+    <script src="script.js"></script> <!-- Enlace al archivo de JavaScript principal -->
+  </body>
+</html>
