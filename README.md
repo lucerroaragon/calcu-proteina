@@ -6,6 +6,6 @@ Poco_activo: peso * 1.2;
 Activo: peso * 1.6;
 Muy_activo: peso * 1.9;
   
-
+Utilice tecnologia: HTML, CSS y JS
 
 Demo: https://lucerroaragon.github.io/calcu-proteina/
